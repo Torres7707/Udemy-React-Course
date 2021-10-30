@@ -21,6 +21,17 @@ const CardList = (props) => {
 						</div>
 					);
 				})}
+			<div className="card-item">
+				<div className="card-container">
+					<img
+						src={`https://gitee.com/torres7707/blogimg/raw/master/img/20211030172745.png`}
+						style={{ width: 300, height: 300 }}
+						alt="monster"
+					/>
+					<h2>Dabei Li</h2>
+					<p>Dabei@gmail.com</p>
+				</div>
+			</div>
 		</div>
 	);
 };
