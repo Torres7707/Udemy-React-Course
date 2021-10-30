@@ -9,8 +9,15 @@ const CardList = (props) => {
 			{Array.isArray(monsters) &&
 				monsters.map((item, index) => {
 					return (
-						<div className="monster-item" key={item.id}>
-							{item.name}
+						<div className="card-item" key={item.id}>
+							<div className="card-container">
+								<img
+									src={`https://robohash.org/${item.id}?set=set2&size-180*180`}
+									alt="monster"
+								/>
+								<h2>{item.name}</h2>
+								<p>{item.email}</p>
+							</div>
 						</div>
 					);
 				})}
